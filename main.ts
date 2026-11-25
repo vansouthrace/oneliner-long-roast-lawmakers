@@ -1,6 +1,4 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
-
-const ENTRY = "The senator who wrote the AI Licensing Act spent forty minutes trying to save it as a PDF, declared the format a security risk, and had his aide retype the whole bill into the chat window instead.";
-
-mkdirSync('/output', { recursive: true });
-writeFileSync('/output/entry.txt', ENTRY);
+import { mkdirSync, writeFileSync } from "node:fs";
+const entry = "They want to regulate artificial intelligence, crypto, and the entire internet, yet they still email their assistant a PDF with the subject line: please convert this.";
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", entry, "utf8");
